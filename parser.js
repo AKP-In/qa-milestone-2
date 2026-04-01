@@ -10,6 +10,7 @@ async function fetchXML(xml) {
 async function parseXML(xml) {
     const parser = new XMLParser();
     const json = parser.parse(xml);
+    console.log(json);
     return json;
 }
 
